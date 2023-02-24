@@ -1,0 +1,17 @@
+package com.kh.water.model.dao;
+
+import java.sql.Connection;
+
+import com.kh.water.model.vo.Water;
+
+public class WaterDao {
+
+	public int insertWater(Connection conn, Water w) {
+		
+		
+		return 0;
+	}
+	
+	
+	
+}

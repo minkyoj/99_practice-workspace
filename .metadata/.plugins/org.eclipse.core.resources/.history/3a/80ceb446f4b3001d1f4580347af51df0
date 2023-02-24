@@ -1,0 +1,11 @@
+package com.kh.water.model.vo;
+
+public class Water {
+	private int waterNo;
+	private String brand;
+	private int price;
+	
+	public Water(){};
+	
+	
+}

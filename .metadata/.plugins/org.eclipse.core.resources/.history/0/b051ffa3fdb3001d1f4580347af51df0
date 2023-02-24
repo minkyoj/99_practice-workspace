@@ -1,0 +1,36 @@
+package com.kh.water.model.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Properties;
+
+import com.kh.common.model.JDBCTemplate.*;
+import com.kh.water.model.vo.Water;
+
+public class WaterDao {
+	
+	private Properties prop = new Properties();
+
+	public int insertWater(Connection conn, Water w) {
+		
+		int result = 0;
+		
+		PreparedStatement pstmt = null;
+		
+		String sql = prop.getProperty("insertWater");
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close(conn);
+		}
+		
+		return result;
+	}
+	
+	
+	
+}

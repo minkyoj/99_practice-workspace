@@ -1,0 +1,50 @@
+package com.kh.water.model.vo;
+
+public class Water {
+	private String waterNo;
+	private String brand;
+	private String price;
+	
+	public Water(){}
+
+	public Water(String waterNo, String brand, String price) {
+		super();
+		this.waterNo = waterNo;
+		this.brand = brand;
+		this.price = price;
+	}
+
+	String getWaterNo() {
+		return waterNo;
+	}
+
+	void setWaterNo(String waterNo) {
+		this.waterNo = waterNo;
+	}
+
+	String getBrand() {
+		return brand;
+	}
+
+	void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	String getPrice() {
+		return price;
+	}
+
+	void setPrice(String price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Water [waterNo=" + waterNo + ", brand=" + brand + ", price=" + price + "]";
+	}
+
+	
+	
+	
+	
+}

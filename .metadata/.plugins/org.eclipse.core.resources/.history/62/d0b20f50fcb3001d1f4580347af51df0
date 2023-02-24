@@ -1,0 +1,19 @@
+package com.kh.water.model.dao;
+
+import java.sql.Connection;
+
+import com.kh.common.model.JDBCTemplate.*;
+import com.kh.water.model.vo.Water;
+
+public class WaterDao {
+
+	public int insertWater(Connection conn, Water w) {
+		
+		Connection conn = JDBCTemplate.getConnection()
+		
+		return result;
+	}
+	
+	
+	
+}
