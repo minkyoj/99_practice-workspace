@@ -1,0 +1,34 @@
+<%@ page import="com.kh.common.model.JDBCTemplate"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	String alertMsg = session.getAttribute("alertMsg");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="insert.wa" id="enroll-form" method="post">
+<br><br>
+제품명
+<br>
+<input type="text" name="brand">
+<br><br>
+가격
+<br>
+<input type="text" name="price">
+<br><br>
+<button type="submit">제출</button>
+</form>
+<br>
+<form>
+수정할번호
+<input type="text" name="uNo">
+<button type="submit">확인</button>
+</form>
+</body>
+</html>

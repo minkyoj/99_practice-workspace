@@ -37,6 +37,8 @@ public class insertWaterController extends HttpServlet {
 		
 		request.setCharacterEncoding("utf-8");
 		
+		Connection conn = getConnection();
+		
 		String brand = request.getParameter("brand");
 		String price = request.getParameter("price");
 		
